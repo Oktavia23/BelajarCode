@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#box> p {
+			height: 300px;
+			width: 300px;
+			background-color: #115c6;
+		}
+
+		p {
+			height: 75%;
+			width: 75%;
+			background-color: #FBDD1C;
+		}
+
+		#limiting > p {
+			max-width: 800px;
+			height: 400px;
+			margin: 0 auto;
+			background-color: deeppink;
+		}
+		#limiting > p content {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		#overflow > p {
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+		}
+		#overflow > p.auto {
+			overflow: auto;
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+		}
+		#overflow > p.scroll {
+			overflow: scroll;
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+		}
+		#overflow > p.hidden {
+			overflow: hidden;
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+		}
+		#overflow > p.visible {
+			overflow: visible;
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+		}
+		#code {
+			height: 200px;
+			width: 200px;
+			background-color: lightgreen;
+			border: 10 solid cornflowerblue;
+			padding: 20px;
+		}
+
+		#code > conten-code {
+			box-sizing: content-box;
+		}
+
+		#code > box-code {
+			box-sizing: border-box;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora</p>
+	</div>
+	<div id="limiting">
+		<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora</p>
+	</div>
+	<div id="overflow">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+		<p class="auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+		<p class="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+		<p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+		<p class="visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet corporis cupiditate dignissimos error expedita explicabo facere facilis, ipsam itaque libero modi officiis optio perspiciatis provident quam sequi voluptatem.</p>
+	</div>
+	<head>
+	<div id="code"></div>
+	</head>
+	<body>
+		<div class="conten-code">
+			<p>Elemen menrepakan <code>box-sizing: content-box ;</code> Ukuran box secara keseluruhan akan menjadi 260px lebar, 260px tinggi ;260 =200 + 20 + 20 + 20 + 10 + 1-</p>
+		</div>
+		<div class="box-code">
+			<p>Elemen menerapkan <code>box-sizing: border-box</code> Ukuran box akan tetap 200px lebar, 200px tinggi meskipun menerapkan padding dan border</p>
+		</div>
+	</body>
+
+</body>
+</html>

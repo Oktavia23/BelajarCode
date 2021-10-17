@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>catatan</title>
+	<link rel="stylesheet" type="text/css" href=""> <!--menyambungkan berkas HTML dengan CSS. bentuk tersebut jika berkas berasal dari komputer sendiri. jika berkas CSS diambil dari browser maka elemen href diisi link sumber berkas -->
+</head>
+<body>
+
+	<!--pada HTML TERDAPAT TIGA TIPE lIST:
+		Unordered List (ul), daftar yang ditampilkan tidak memiliki urutan.
+		Ordered List (ol), daftar yang ditampilkan secra terurut.
+		Description List (dl), daftar yang ditampilkan dari beberapa istilah diikuti dengan diskripsi dari istilah tersebut-->	
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4
+				<ul>
+					<li>List Item 3.1</li>
+					<li>List Item 3.2</li>
+					<li>List Item 3.3</li>
+				</ul>
+			</li>
+			<li>List Item 4</li>
+		</ul>
+
+	<ol type="I">
+		<li>Langkah Pertama</li>
+		<li>Langkah Kedua</li>
+		<li>Langkah Ketiga</li>
+	</ol>		
+	<ol start="5">
+		<li>langkah selanjutnya </li>
+		<li>langkah berikutnya </li>
+		<li>langkah danseterusnya </li>
+	</ol>
+	<!-- urutan terbalik -->
+	<ol reversed="8">
+		<li>langkah selanjutnya </li>
+		<li>langkah berikutnya </li>
+		<li>langkah danseterusnya </li>
+	</ol>
+	<!--format teks:
+		long quotations -->
+
+	<blockquote>
+		<p>Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang umumnya berada padapeladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau organisasi.</p>
+	</blockquote>
+	<blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+		<p>
+			Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang umumnya berada padapeladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau organisasi.
+		</p>	
+	</blockquote>
+	<!--Preformatted text
+		untuk mengabaikan penulisan spasi berulang dan juga line breaks (baris baru) -->
+	<pre>
+		SAJAK PUTIH
+
+		Bersandar pada tari warna pelangi
+		Kau depanku bertundung sutra senja
+		Di hitam matamu kembang mawar dan melati
+		Harum rambutmu mengalun bergelud senda
+
+		Sepi menyanyi, malam dalam mendoa tiba
+		Meriak muka air kolam jiwa
+		Dan dalam dadaku merdu lagu
+		Menarik menari seluruh aku
+
+		Hiduo dari hidupku pintu terbuka
+		Selama matamu bagiku menengadah
+		Selama kau darah mengalis dari luka
+		Antara kita mati datang tidak membela...
+
+							Karya : Chairil Anwar
+	</pre>
+	
+	
+	<!--figure digunakan untuk mempresentasikan konten tersendiri (self-contained content) seperti ilustrasi, diagram, foto atau bisa juga baris atau kode-->
+	<figure>
+		<img src="assets/image/dicoding.jpeg">		
+		<figcaption>Dicoding</figcaption>
+	</figure>
+	
+	<!-- achor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email atau URL lainnya.
+	selain href, beberapa atribut khusus yang digunakan elemen ini, antara lain:
+	|---------------|-------------------------------------------------------------------------------------------------
+	|atribut		|nilai
+	|---------------|-------------------------------------------------------------------------------------------------
+	|download		|filename
+	|href			|URL
+	|hreflang		|language_code
+	|ping			|list_of_URLs
+	|referrerpolicy	|no-referrer, no-referrer when-downgrade, origin, origin-whencross-origin, unsafe-url
+	|rel			|alternate, author, bookmark, external, help, license, next, noreferrernoopener, prev, search, tag
+	|target			|_blank, _parent, _self, _top
+	|media			|
+	 -->
+		<p>Hubungi kami di</p>
+		<ul>
+			<li><a href="">Email</a></li>
+		</ul>
+
+	<!--emphasized text gunakan elemen <em> untuk menunnjukkan bagian kata yang perlu kita tekankan-->
+		<p>
+			<em>Oding</em>adalah seorang pelajar</p>
+		<p>Dia adalah seorang<em>pelajar</em></p>
+	
+	<!--important text gunakan elemen <strong> untuk menunjukkan sebuah tekx yang begitu penting (strong important), serius, ataupun mendesak -->
+		<p>kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan tengah malam!</strong></p>
+
+	<!--short quotations gunakan elemn <q> untuk menandai sebuah kutipan dalam sebuah teks -->
+		<p>Sebelum pulang kerja, ia berkata kepadaku: <q>maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>
+
+	<!--citation atribut <cite> juga merupakan sebuah elemn yang digunakan untuk merujuk pada dokumen, contohnya sebuah buku, majalah, artikel dan lainnya -->
+		<p>Informasi selengkapnya bisa Anda daptkan di <cite><a href="https://dicoding.com">dicoding.com</a></cite></p>
+
+	<!--definisi trem, elemen <dfn> digunakan ketika mendefinisikan sebuah istilah  -->
+	<p><dfn>Website</dfn>merupakan halaman yang menampilkan informasi melalui teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.</p>
+
+	<!--subcript dan supercript, subcript <sub> dan supercpipt <sup> merupakan elemn yang dapat membuat teks yang ditampikan nampak kecul -->
+		<p>Sukrosa merupakan suatu disakarida yang dibentuk dari monomer-monomernya yang berupa unit glukosa dan fruktosa, dengan rumus molekul C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>.</p>
+		<p>Salah satu persamaan peling umum dalam semua fisika adalah E=<sup>2</sup></p>
+
+	<!--highlighted text untuk menandai atau menyorot sebuah teks kita bisa menggunakan elemen <mark> -->
+		<p>Nama saya <mark>Oktavia Rokmana Dewi.</mark></p>
+		<p> Mahasiswa <mark>Universita Negeri Malang</mark></p> 
+
+	<!--line break <br> dapat digunakan untuk memberitahu browser untuk memberi sebuah baris baru pada sebuah teks -->
+		<p>Dicoding Space, <br>
+			Jln. Batik Kumeli No.50.<br>
+			Bandung.<br>
+			40123
+		</p>
+
+	<!--header dan footer, header digunakan sebagai pembuka atau pengantar konten dalam sebuah elemn <article> atau <section>. footer digunakan sebagai catatan kaki sebuah elemn <article> atau section> -->
+		<body>
+			<header>
+					<h1>Bandung</h1>
+					<p>Kota metropolitan di Provinsi Jawa Barat, sekaligus manjedi ibu kota provinsi tersebut</p>
+					<nav>
+						<ul>
+							<li><a href="#Sejarah">Sejarah</a></li>
+							<li><a href="#Geografis">Geografis</a></li>
+							<li><a href="#Wisata">Wisata</a></li>
+						</ul>
+					</nav>
+			</header>
+
+				<footer>
+					&copy: 2021, Oktavia Academy
+				</footer>
+		</body>
+		<!-- header dan footer dapat digunakan pada sebuah elemen dan <article> dan <section>-->
+			<article>
+				<header>
+					<h1>Judul Artikel</h1>
+					<h2>Oleh: Dicoding Indonesia</h2>
+				</header>
+				<p>.... Konten atikel dimulai dari sini</p>
+				<footer>
+					<p>Bagikan artkel ini melalui</p>
+					<ul>
+						<li>Twitter</li>
+						<li>Facebook</li>
+						<li>Intagram</li>
+					</ul>
+				</footer>
+			</article> 
+	<!--main, elemen <main> digunakan untuk menampung/mewadahi konten utama (domain) dalam <body> -->
+		<body>
+			<header>
+				<!--konten header website -->
+			</header>
+			<main>
+				<section>
+					<article>
+						<p>Sebuah Artikel</p>
+					</article>
+				</section>
+				<article>
+					<p>Sebuah artikel lain</p>
+				</article>
+			</main>
+			<footer>
+				<!--konten footer website -->
+			</footer>
+		</body>
+	<!--nav, elemen <nav> digunakan untuk menampung sebuah navigasi yang sifatnya penting(major) -->
+		<nav>
+			<ul>
+				<li><a href="#Sejarah">Sejarah</a></li>
+				<li><a href="#Geografis">Geografis</a></li>
+				<li><a href="#Wisata">Wisata</a></li>
+			</ul>
+		</nav>
+
+
+	<!--Generic element (elemen umum) dapat menggambarkan konten dengan tepat. Div <div> merupakan sebuah wadah (container) yg bersifat umum untuk menampung beberapa elemen-->
+		<title> Div Element</title>
+		<style type="text/css">
+			.shadowbox {
+				width: 15 em;
+				border: 1px solid #333;
+				box-shadow: 8px 8px 5px #444;
+				padding: 8px 12px;
+				background-image: linier gardient (180deg, #fff, #ddd 40%, #ccc);
+			}
+		</style>
+		<div class="shadowbox">
+			<p>Paragraf ini berada di dalama elemen div, namun akan ditamoilkan sama seperti paragraf biasanya. elemen ini sering digunakan untuk mengelompokkan sebuah konten sehingga dapat mudah untuk styling dengan  meggunakan atribut class atau id.</p>
+		</div>
+
+
+	<!-- span <spa>  sama dengan div, bedanya ini digunakan sebagai phrase element dan tidak terdapat line breaks -->
+		<style type="text/css">
+			.phone {
+				font-weight: bold;
+			}
+		</style>
+		<ul>
+			<li>Agil : <span class="phone">08123xxx</span></li>
+			<li>Okta : <span class="phone">08023xxx</span></li>
+			<li>Shani : <span class="phone">08423xxx</span></li>
+		</ul>
+
+		<style type="text/css">
+			.bahan {color: red;}
+		</style>
+		<p>Untuk membuat sebuah bakso kita membutuhkan<span class="bahan"> daging sapi</span>,<span class="bahan"> tepung tapioka</span>, <span class="">bawang merah</span> dan <span class="bahan">bawang putih</span> kemudian satu sendok <span class="bahan">gula</span> dan <span class="bahan">garam</span></p>
+	<!-- -->
+	<h1> Pemenang Piala Dunia 3 Tahun Terakhir</h1>
+	<table>
+		<tr> <!-- -->
+			<th>Tahun</th> <!-- -->
+			<th>Juara 1</th>
+			<th>Juara 2</th>
+			<th>Juara 3</th>
+		</tr>
+		<tr>
+			<td>2018</td> <!-- -->
+			<td>Prancis</td>
+			<td>Kroasia</td>
+			<td>Belgium</td>
+		</tr>
+		<tr>
+			<td>2014</td>
+			<td>Jerman</td>
+			<td>Argentina</td>
+			<td>Belanda</td>
+		</tr>
+		<tr>
+			<td>2010</td>
+			<td>Spanyol</td>
+			<td>Belanda</td>
+			<td>Jerman</td>
+		</tr>
+	</table>
+	<table border="1">
+		<tr>
+			<th>18.00</th>
+			<th>19.00</th>
+			<th>20.00</th>
+		</tr>
+		<tr>
+			<td colspan="2">Advanture Infinity Wars</td>
+			<td>It Chapter 2</td>
+		</tr>
+		<tr>
+			<td>One Piece: Stamppede</td>
+			<td>Weathering With You</td>
+			<td>Gundala</td>
+		</tr>
+			<td>Gundala</td>
+			<td colspan="2">Advenger Infinity Wars</td> <!--colspan artinya loncat -->
+		</tr>
+	</table>
+
+	<table border="1">
+		<tr>
+			<th rowspan="3">18.00</th>
+			<td>Advenger Infinity Wars</td>
+		</tr>
+		<tr>
+			<td>One Piece: Stumpede</td>
+			<td>Gundala</td>
+		</tr>
+	</table>
+	</body>
+	</head>
+</body>
+</html>

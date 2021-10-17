@@ -1,0 +1,15 @@
+
+/*memberi warna pada tulisan*/
+h1 {color: green;}
+
+p {
+	font-size: small;
+	font-family: sans-serif;
+	/*deklarasi nilai properti lainnya pada garis baru*/
+}
+
+/* dlm CSS terdapat dua bagian dalam sebuah rule. pertama identitas elemen yg akan menerapkan rule (selector). yang kedua adalah deklarasi atau intruksi yang akan diterapkan pada selector. CSS tidak memperhatikan spasi, tapiuntuk stuan nilai seperti px, em dll harus ditulis tanpa spasi pada nilainya*/
+h1 {
+	margin: 2em; /*dekalrasi tdk akan berfungsi jika terdapat spasi antaranilai dan satuannya*/
+}
+

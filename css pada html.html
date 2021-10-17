@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.red {
+			color: red;
+		}
+		
+		.skyblue-bg {
+			background-color: skyblue;
+		}
+
+		.fancy {
+			font-weight: bold;
+			text-shadow: 4px 4px 3px #77f;
+		}
+	</style>
+	<body>
+		<p class="red">paragraf dengan back ground merah</p>
+		<p class="skyblue-bg">Paragraf dengan background berwarna biru</p>
+		<p class="fancy">Paragraf dengan gaya fancy</p>
+		<p>Paragraf dengan menampilkan teks dengan warna standar tanpa menerapkan styling</p>
+	</body>
+	<style>
+		span {
+			color: red;
+		}
+	</style>
+	<head>
+		<body>
+			<span>Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen ini ditampilkan dengan warna teks merah</span>
+			<p>Ini merupakan sebuah teks yang derada pada elemen paragraf, teks ini tidak seharusnya tidak akan terpengaruh oleh rule.</p>
+			<span>Ini merupakan sebuah teks yang berada pada elemn span lainnya. seharusnya elemn ini ditampilkan dengan warna teks merah juga.</span>
+		</body>
+	</head>
+	<style>
+		.red {
+			color: red;
+		}
+		.skyblue-bg {
+			background-color: skyblue;
+		}
+		.fancy {
+			font-weight: bold;
+			text-shadow: 4px 4px 3px #77f;
+		}
+	</style>
+	<head>
+		<body>
+			<p class="red">Paragraf dengan teks berwarna merah</p>
+			<p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+			<p class="fancy">Paragraf dengan gaya fancy</p>
+			<p>Paragraf yang menampilkan teks dengan warna standartanpa menerapkan style</p>
+		</body>
+	</head>
+	<style>
+		.red {
+			color: red;
+		}
+		p.red {
+			color: red;
+		}
+		.red.skyblue-bg {
+			font-weight: bold;
+			text-shadow: 4px 4px 3px #77f;
+		}
+		p.red.fancy {
+			text-shadow: 4px 4px 3px #00c8eb;
+		}
+	</style>
+	<head>
+		<body>
+			<h1 class="red">Heading dengan tekas berwarna merah</h1>
+			<p class="red">Paragraf denga teks berwarna merah</p>
+			<h1 class="red skyblue-bg">Heading dengan tekas berwarna merah dan background biru langit</h1>
+			<p class="red fancy">Paragraf dengan tekas berwana fancy</p>
+		</body>
+	</head>
+	<style>
+		#special {
+			background-color: skyblue;
+		}
+	</style>
+	<body>
+		<div id="special">
+		<p>Ini merupakan konten di dalam sebuah div yang diberi id spesial</p> </div>
+		<div>
+		<p>Ini merupakan konten di dalam sebuah div biasa</p>
+	</div>
+	</body>
+	<style>
+		a[href] {
+			color: blue;
+		}
+		/*<a> elemen yg merupakan nilai pada href dengan awalan "#" */
+		a[href^="#"] {
+			background-color: gold;
+		}
+
+		/*<a> elemen yg merupakan nilai pada href yang emangandung teks "example" */
+		a[href*="example"] {
+			background-color: silver;
+		}
+
+		/*<a> elemen yang menerapkan nilai pada href yang mengandung teks "insensitive" */
+		a[href*="insensitive"] {
+			background-color: cyan;
+		}
+
+		/*<a> elemen yang menerapkan nilai pada href dengan akhiran ".org" */
+		a[href$=".org"]{
+			color: red;
+		}
+	</style>
+	<head>
+		<body>
+			<ul>
+				<li><a href="#internal">Internal link</a></li>
+				<li><a href="https://example.com">Example link</a></li>
+				<li><a href="insensitive">Insensitive internal link</a></li>
+				<li><a href="https://example.org">Example org link</li>
+			</ul>
+		</body>
+	</head>
+	<head>
+		<body>
+			
+		</body>
+	</head>
+</head>
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<style>
+	/*menargetkan seluruh tipe elemn */
+	*{
+		color: green;
+	}
+
+	/*menargetkan seluruh tipe elemn yg mengandung nilai "en" pada atribut lang */
+	*[lang^=en] {
+		font-style: italic;
+	}
+
+	/*menargetkan seluruh elemn yg memiliki tipe "warning" pada atribut class*/
+	*warning {
+		color: red;
+	}
+
+	/*menargetkan seluruh tipe lemen yg memiliki "content" pada atribut id */
+	*#content {
+		border: 1px solid blue;
+		padding: 20px;
+	}
+</style>
+<body>
+	<p>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</p>
+	<p lang="en-us">This is an English paragraph contains en-us value of lang attribute, so this text will be geen and italic.</p>
+
+	<h1>Ini merupakan header biasa</h1>
+	<h1 lang="en-us">This is an English Header</h1>
+
+	<p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning sehingga teks dari paragraf ini akan berarna merah</p>
+
+	<div>
+		<p id="content">Ini merupakan teks di dalam sebuah div yg memiliki id bernilai "content", seharusnya paragraf inidibungkus dalam border yang memiliki padding 20px</p>
+	</div>
+<head>
+	<style>
+		/*rule akan diterapkan pada elem paragraf yg berada tepat setelah elemn img */
+		
+		img + p {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemn paragraf ini.</p>
+	<img src="assets/image/dicoding.jpeg" alt="Dicoding logo" width="400px">
+	<p>Ini merupanakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna hijau</p>
+	<p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemn gambar, namun tidak diletakkan persis setelahnya, sehingga rule tidak akan diterapkan pada elem ini.</p>
+</body>
+<head>
+	<style>
+		/*rule akan diterapkan pada elem header yg berada tepat setelah elemen img */
+		img ~ p {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemn paragraf ini.</p>
+	<img src="assets/image/dicoding.jpeg" alt="Dicoding logo" width="400px">
+	<p>Ini merupanakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna hijau</p>
+	<div>
+	<p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemn gambar, namun tidak diletakkan persis setelahnya, sehingga rule tidak akan diterapkan pada elem ini.</p></div>
+	<p>Ini merupakan paragraf emapat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemn gambar, sehingga elemn ini akan menerapkan rule dengan menampilkan teks berwarna hijau</p>
+</body>
+<style>
+/*rule akan diterapkan pada elemn paragraf yang merupakan child dari elemen dive */
+	div > p {
+		background-color: yellow;
+	}
+	/*jika akan menerapkan rule pada elemen paragraf yg merupakan turunan dari elemen div maka penulisan (div p { backgroun-color: yellow; }) */
+</style>
+<head>
+	<body>
+		<div>
+			<p>Paragraf pertama. di dalam div</p>
+			<p>Paragraf kedua di dalam div</p>
+			<section><p>Paragraf ketiga di dalam div namun bukan sebagai anak elemen secara langsung</p></section>
+			<p>Paragraf keempat di dalam div</p>
+		</div>
+		<p>Paragraf kelima di luar div</p>
+		<p>Paragraf keenam di luar div</p>
+	</body>
+</head>
+<style>
+	/*rule untuk menerapkan tautan yg belum pernah dikunjungi  a: link {collor:  red}*/
+	a: link {collor:  red}
+	/*rule untuk diterapkan tautan yg sudah pernah dikunjungi */
+	a: link {
+		color: green;
+	}
+	/*rule akan diterapkan di tautan ketika diarahkan dengan kursor */
+	a: hover {
+		color: pink;
+	}
+	/*rule diterapkan di sebuah tautan ketika ditekan */
+	a: active {
+		color: orange;
+	}
+
+</style>
+<style>
+	blockquote: :before,
+	blockquote: :after {
+		content: '"';
+		font-size: 24px;
+		font-style: italic;
+		font-weight: bold;
+	}
+</style>
+<style>
+	p: : frist-letter {
+		font-size: 32px;
+		font-weight: bold;
+		color: saddlebrown;
+	}
+</style>
+<blockquote>Lorem ipsum dolor sit amet, consector adpidising elit. Aut eius erorr explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed voluptates. Aliquam aspernature autem est nobis oficiapreasentium quas recusande rem.</blockquote>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt, dicta laudantium quae quam sequi
+soluta vitae! A, architecto beatae, consequuntur et eveniet fuga laudantium molestias praesentium temporibus, unde
+   velit</p>
+<style type="text/css"> 
+body {
+font-size: 16px;
+}
+h1{
+	font-size: 150%; /*150% dari 16 = 24px */
+}
+p {
+	line-height: 2;
+}
+p {line-height: 200%;
+}
+p{
+	line-height: 2em;
+}
+</style>
+<h1>Header ini meiliki ukuran font 24px atau 150% dari ukuran font boby</h1>
+<body>
+<h1>karena properti font dapat diturunkan pada elemn turunannya, maka elemen inin akan menerapkan ukuran 16px (turunan dari elemen body)</h1>
+<p>Properti line-height digunakan untuk mengatur jarak minimal teks</p>
+
+</body>
+</body>
+</html>
